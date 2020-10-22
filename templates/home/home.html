@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img class="materialboxed responsive-img" height="300" src="{% static 'Image/laptops/full/13.jpg' %}"> <!-- random image -->
+            <div class="caption left-align">
+                <h3 class="light green-text text-darken-4">This is our big Tagline!</h3>
+                <h5 class="light green-text text-darken-4">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img class="materialboxed responsive-img" width="600" src="{% static 'Image/laptops/full/6.jpg' %}"> <!-- random image -->
+            <div class="caption left-align">
+                <h3 class="light green-text text-darken-4">Left Aligned Caption</h3>
+                <h5 class="light green-text text-darken-4">Here's our small slogan.</h5>
+               
+            </div>
+        </li>
+        <li>
+            <img class="materialboxed responsive-img" width="600" src="{% static 'Image/laptops/full/7.jpg' %}"> <!-- random image -->
+            <div class="caption right-align">
+                <h3 class="light green-text text-darken-4">Right Aligned Caption</h3>
+                <h5 class="light green-text text-darken-4">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img class="materialboxed responsive-img" width="600" src="{% static 'Image/laptops/full/14.jpg' %}"> <!-- random image -->
+            <div class="caption center-align">
+                <h3 class="light green-text text-darken-4">This is our big Tagline!</h3>
+                <h5 class="light green-text text-darken-4">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<div class="col s12 m7">
+
+    <div class="card horizontal">
+        <div class="card-stacked">
+            <div class="card-content">
+                <p>There are many reason why one would want to buy cheap used laptops, the main, and most obvious reason being that a new laptop is simply too expensive. In this modern era, high tech devices that are very expensive like the computers can be replaced with cheaper ones. Such cheap computers mostly come in the form of used computers. Used computers can be found in abundance at leosoft technologies, even in the local area... </p>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="{% static 'Image/laptops/full/23.jpg' %}">
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="{% static 'Image/laptops/full/6.jpg' %}"></div>
+</div>
+<div class="col s12 m7">
+
+    <div class="card horizontal">
+        <div class="card-image">
+            <img src="{% static 'Image/laptops/full/22.jpg' %}">
+        </div>
+        <div class="card-stacked">
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

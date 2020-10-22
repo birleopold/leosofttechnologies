@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>leosoft technologies</title>
+</head>
+<body>
+    {% include 'nav.html' %}
+    {% block content %}
+    {% endblock %}
+    {% include 'footer.html'%}
+    </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                fullWidth: true,
+                indicator: true
+            });
+            $('.slider').slider({full_width: true});
+            autoplay();
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 5000);
+            };
+            
+            $('.materialboxed').materialbox();
+            $('.slider').slider({
+            indicators: true,
+            height:1100,
+            transition: 500,
+            interval: 6000});
+            
+            
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+ 		$('.sidenav').sidenav();
+ 	});
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems, options);
+        });
+        // Or with jQuery
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+</html>

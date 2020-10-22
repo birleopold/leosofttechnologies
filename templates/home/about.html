@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-item black-text" href="#one!">
+        <img src="{% static 'Image/laptops/full/2.jpg' %}">
+        <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+    </div>
+    <div class="carousel-item white-text" href="#two!">
+        <img src="{% static 'Image/laptops/full/14.jpg' %}">
+    </div>
+    <div class="carousel-item white-text" href="#three!">
+        <img src="{% static 'Image/laptops/full/8.jpg' %}">
+    </div>
+    <div class="carousel-item white-text" href="#four!">
+        <img src="{% static 'Image/laptops/full/6.jpg' %}">
+    </div>
+</div>
+
+<!-- Start About Details -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 centerText">
+            <hr class="divider">
+            <br>            
+                <div class="card-content white-text"></div>
+                <ul class="collection">
+                    <li class="collection-item">Found in the heart of Kampala city, </li>                    
+                    <li class="collection-item">Leosoft technologies is an all in one technology support company
+                        handling all technical issues faced around us.</li>                    
+                    <li class="collection-item">offering computer and all electronics repairs and installations of all
+                        kinds. </li>                    
+                    <li class="collection-item">We design quality,responsive websites and webapps, </li>                    
+                    <li class="collection-item">we configure networks, network device repairs and unlocking services.
+                    </li>
+                </ul>
+                <br>
+                <hr class="divider">
+                <br>
+            </div>
+        </div>   
+</div>
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="{% static 'Image/laptops/full/1.jpg' %}"></a>
+    <a class="carousel-item" href="#two!"><img src="{% static 'Image/laptops/full/6.jpg' %}"></a>
+    <a class="carousel-item" href="#three!"><img src="{% static 'Image/laptops/full/3.jpg' %}"></a>
+    <a class="carousel-item" href="#four!"><img src="{% static 'Image/laptops/full/7.jpg' %}"></a>
+    <a class="carousel-item" href="#five!"><img src="{% static 'Image/laptops/full/5.jpg' %}"></a>
+</div>
+<!-- End About Details -->
+{% endblock %}
